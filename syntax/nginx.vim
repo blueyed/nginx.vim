@@ -5,9 +5,10 @@ if exists("b:current_syntax")
   finish
 end
 
-setlocal iskeyword+=.
-setlocal iskeyword+=/
-setlocal iskeyword+=:
+" NOTE: do not mess with 'iskeyword', there is always W to handle whole URLs
+" setlocal iskeyword+=.
+" setlocal iskeyword+=/
+" setlocal iskeyword+=:
 
 syn match ngxVariable '\$\w\w*'
 syn match ngxVariableBlock '\$\w\w*' contained
